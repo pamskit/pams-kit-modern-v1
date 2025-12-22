@@ -1,0 +1,26 @@
+body {
+   font-family: var(--font-sans);
+   color: var(--color-neutral-900);
+   background-color: var(--color-white);
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: var(--space-lg);
+}
+
+h1 {
+   font-size: 2rem;
+   margin-bottom: var(--space-sm);
+}
+
+p {
+   color: var(--color-neutral-600);
+}
+
+a.link {
+   color: var(--color-primary);
+   text-decoration: none;
+   font-weight: 500;
+}
