@@ -3,7 +3,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   min-height: 100vh;
    background-image: url("/assets/main-bg.png");
    background-position: center;
    object-fit: cover;
@@ -91,18 +91,18 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 6px;
+   gap: 4px;
 }
 
 .main-footer__img {
-   height: 40px;
+   height: 30px;
    width: auto;
-   margin-right: 12px;
+   margin-right: 10px;
 }
 
 .main-footer__button {
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
    border-radius: 10px;
    border: none;
    color: #fff;
@@ -111,7 +111,7 @@
    align-items: center;
    justify-content: center;
    cursor: pointer;
-   font-size: 18px;
+   font-size: 14px;
 }
 
 /* hover */
