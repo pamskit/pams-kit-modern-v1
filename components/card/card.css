@@ -1,15 +1,9 @@
 :root {
    --pk-primary: #6366f1;
-   --pk-secondary: #64748b;
    --pk-dark: #0f172a;
-
-   --pk-info: #0ea5e9;
-   --pk-success: #22c55e;
-   --pk-danger: #ef4444;
-
    --pk-radius: 10px;
-   --pk-transition: .25s ease;
 }
+
 
 .card-container {
    min-height: 100vh;
@@ -17,6 +11,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   padding: 80px;
 
    background:
       radial-gradient(at top left,
@@ -38,6 +33,7 @@
    justify-content: center;
    align-items: center;
    margin-bottom: 28px;
+
 }
 
 .card-heading__heading-title {
@@ -55,6 +51,7 @@
 }
 
 .pk-card-group {
+
    display: flex;
    gap: 12px;
    flex-wrap: wrap;
@@ -66,7 +63,7 @@
 /* Start Basic Card */
 
 .basic-card {
-   width: 320px;
+   width: 300px;
    background-color: #fff;
    border-radius: 16px;
    overflow: hidden;
@@ -156,7 +153,7 @@
 
 /* Start Job Card */
 .job-card {
-   width: 320px;
+   width: 300px;
    background-color: #fff;
    border-radius: 16px;
    padding: 16px;
@@ -264,7 +261,7 @@
 
 /* Start Recipe Card */
 .recipe-card {
-   width: 320px;
+   width: 300px;
    background-color: #fff;
    border-radius: 16px;
    overflow: hidden;
@@ -384,7 +381,7 @@
 
 /* Start Profile Card */
 .profile-card {
-   width: 280px;
+   width: 300px;
    background-color: #fff;
    border-radius: 20px;
    overflow: hidden;
@@ -506,7 +503,7 @@
 
 /* Start Product Card */
 .product-card {
-   width: 260px;
+   width: 300px;
    background: #fff;
    border-radius: 16px;
    overflow: hidden;
@@ -567,7 +564,7 @@
 
 /* Start Analytics Card */
 .stat-card {
-   width: 260px;
+   width: 300px;
    padding: 16px;
    background: #fff;
    border-radius: 16px;
@@ -609,7 +606,7 @@
 
 /* Start Status Card */
 .status-card {
-   width: 320px;
+   width: 300px;
    padding: 14px;
    border-radius: 14px;
    display: flex;
