@@ -11,14 +11,23 @@
 }
 
 .buttons-container {
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   min-height: 100vh;
-   background-image: url("/assets/main-bg.png");
-   background-position: center;
-   object-fit: cover;
+
+   background:
+      radial-gradient(at top left,
+         #fcdee0 0%,
+         transparent 60%),
+      radial-gradient(at bottom right,
+         #c8ccfb 0%,
+         transparent 60%),
+      linear-gradient(135deg,
+         #fdebed 0%,
+         #e9e7ff 50%,
+         #fbe4ea 100%);
 }
 
 .buttons-heading {
@@ -211,4 +220,36 @@
 
 .pk-btn--icon-only.pk-btn--light:hover {
    background: #e5e7eb;
+}
+
+.pk-btn--slide {
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.pk-btn--slide::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(255, 255, 255, .15);
+   transform: translateX(-100%);
+   transition: transform .35s ease;
+   z-index: -1;
+}
+
+.pk-btn--slide:hover::before {
+   transform: translateX(0);
+}
+
+.pk-btn--icon-shift .pk-btn__icon {
+   transition: transform .25s ease;
+}
+
+.pk-btn--icon-shift:hover .pk-btn__icon {
+   transform: translateX(4px);
+}
+
+.pk-btn--glow:hover {
+   box-shadow: 0 10px 30px rgba(99, 102, 241, .35);
 }

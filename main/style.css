@@ -1,12 +1,21 @@
 .main-container {
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   min-height: 100vh;
-   background-image: url("/assets/main-bg.png");
-   background-position: center;
-   object-fit: cover;
+
+   background:
+      radial-gradient(at top left,
+         #fcdee0 0%,
+         transparent 60%),
+      radial-gradient(at bottom right,
+         #c8ccfb 0%,
+         transparent 60%),
+      linear-gradient(135deg,
+         #fdebed 0%,
+         #e9e7ff 50%,
+         #fbe4ea 100%);
 }
 
 .main-index {
