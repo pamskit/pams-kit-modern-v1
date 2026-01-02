@@ -26,6 +26,14 @@
    max-width: 700px;
 }
 
+.header__logo {
+   height: 50px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   margin: 20px;
+}
+
 .main-index__heading-title {
    margin: 0;
    padding: 0;
@@ -100,14 +108,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 4px;
+   gap: 8px;
+   background-color: #9aa3ff;
+   padding: 10px 16px;
+   border-radius: 999px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.main-footer__img {
-   height: 30px;
-   width: auto;
-   margin-right: 10px;
-}
+
 
 .main-footer__button {
    width: 30px;
