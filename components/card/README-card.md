@@ -1,158 +1,73 @@
-# Pams Kit v1 -- Modern Cards
+# Card Component – Pams Kit v1
 
-Pams Kit v1 adalah kumpulan **UI Card Components berbasis HTML & CSS
-murni** yang dirancang untuk web developer modern.\
-Tidak bergantung pada framework (React, Vue, dll), mudah dicopy-paste,
-dan siap dikustomisasi.
+A collection of **modern card components** built with pure HTML & CSS.  
+Designed for UI kits, dashboards, landing pages, and content layouts.  
+No JavaScript and no framework dependency.
 
-------------------------------------------------------------------------
+---
 
-## ✨ Fitur Utama
+## Usage
 
--   Pure HTML & CSS
--   Menggunakan **BEM Naming Convention**
--   Modern UI + hover interaction
--   Responsive (Flexbox)
--   Menggunakan **Bootstrap Icons**
--   Mudah dikembangkan menjadi UI Kit / Design System
+### 1. Import CSS
 
-------------------------------------------------------------------------
-
-## 📦 Struktur File
-
-    /base
-     ├─ reset.css
-     ├─ base.css
-    /cards
-     ├─ card.css
-    index.html
-
-------------------------------------------------------------------------
-
-## 🚀 Cara Menggunakan
-
-### 1. Sertakan CSS
-
-``` html
+```html
 <link rel="stylesheet" href="/base/reset.css" />
 <link rel="stylesheet" href="/base/base.css" />
-<link rel="stylesheet" href="/cards/card.css" />
+<link rel="stylesheet" href="/components/card/card.css" />
 ```
 
-### 2. Sertakan Bootstrap Icons
+If you are using icons:
 
-``` html
+```html
 <link
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
   rel="stylesheet"
 />
 ```
 
-------------------------------------------------------------------------
+---
 
-## 🧩 Komponen Card yang Tersedia
+## Available Card Types
 
-### 1. Basic Card
+This component includes multiple card variations, each designed for different use cases:
 
-Cocok untuk konten umum, artikel, atau landing page.
-
-Class utama:
-
-``` html
-.basic-card
+```
+pk-basic-card        → Content / blog preview card
+pk-recipe-card       → Recipe / article card with meta & tags
+pk-profile-card      → User / profile card
+pk-product-card      → Product / ecommerce card
+pk-job-card          → Job vacancy / career card
+pk-stat-card         → Analytics / statistics card
+pk-status-card       → Status / notification card
+pk-interaction-card  → Call-to-action / interaction card
 ```
 
-------------------------------------------------------------------------
+---
 
-### 2. Recipe Card
+## Basic Example
 
-Digunakan untuk resep makanan, blog kuliner, atau konten cooking.
+```html
+<div class="pk-basic-card">
+  <img class="pk-basic-card__img" src="image.jpg" alt="Card image" />
 
-Class utama:
+  <div class="pk-basic-card__body">
+    <h4 class="pk-basic-card__title">Card Title</h4>
+    <p class="pk-basic-card__description">Short description goes here.</p>
+  </div>
 
-``` html
-.recipe-card
+  <div class="pk-basic-card__footer">
+    <button class="pk-basic-card__button">Action</button>
+  </div>
+</div>
 ```
 
-------------------------------------------------------------------------
+---
 
-### 3. Profile Card
+## Customization
 
-Untuk menampilkan profil user, freelancer, atau team member.
+All cards use **CSS Variables** for easy customization:
 
-Class utama:
-
-``` html
-.profile-card
-```
-
-------------------------------------------------------------------------
-
-### 4. Product Card
-
-Untuk kebutuhan e-commerce sederhana.
-
-Class utama:
-
-``` html
-.product-card
-```
-
-------------------------------------------------------------------------
-
-### 5. Job Card
-
-Untuk job listing atau career page.
-
-Class utama:
-
-``` html
-.job-card
-```
-
-------------------------------------------------------------------------
-
-### 6. Analytics / Stat Card
-
-Menampilkan data statistik atau KPI.
-
-Class utama:
-
-``` html
-.stat-card
-```
-
-------------------------------------------------------------------------
-
-### 7. Status Card
-
-Untuk alert status seperti success / info.
-
-Class utama:
-
-``` html
-.status-card
-```
-
-------------------------------------------------------------------------
-
-### 8. Interaction Card
-
-Untuk CTA (Call to Action).
-
-Class utama:
-
-``` html
-.interaction-card
-```
-
-------------------------------------------------------------------------
-
-## 🎨 Design Token
-
-Pams Kit menggunakan CSS Variable minimal & bersih:
-
-``` css
+```css
 :root {
   --pk-primary: #6366f1;
   --pk-dark: #0f172a;
@@ -160,44 +75,23 @@ Pams Kit menggunakan CSS Variable minimal & bersih:
 }
 ```
 
-> Kamu bisa override token ini untuk theme berbeda (dark mode, brand
-> color, dll).
+You can override these variables globally or per project without touching the component styles.
 
-------------------------------------------------------------------------
+---
 
-## 📱 Responsive Layout
+## Notes
 
-Gunakan container berikut untuk layout grid:
+- Each card is **standalone** and can be used independently
+- Card styles are modular and do not affect each other
+- Icons are provided by **Bootstrap Icons**
+- Safe for copy–paste usage
+- Built for static HTML & CSS projects
 
-``` html
-<div class="pk-card-group">
-  <!-- cards -->
-</div>
-```
+---
 
-Menggunakan: - `flex-wrap` - `gap` - `justify-content: center`
+📬 Contact & Links
+If you have questions, feedback, or would like to collaborate, feel free to reach out through the following channels. I’m open to discussions related to UI kits, frontend styling, and component design.
 
-------------------------------------------------------------------------
-
-## 🛠️ Customisasi
-
--   Ganti warna utama lewat `--pk-primary`
--   Ganti radius global lewat `--pk-radius`
--   Tambahkan variant card baru tanpa mengubah card lama
-
-------------------------------------------------------------------------
-
-## 📄 Lisensi
-
-Free to use untuk personal & commercial project.
-
-------------------------------------------------------------------------
-
-## 👨‍💻 Author
-
-**Pams Kit v1**\
-Built for web developers who love clean UI & reusable components.
-
-------------------------------------------------------------------------
-
-Happy Coding 🚀
+- WhatsApp: +62 838-3373-5915
+- GitHub: https://github.com/pamskit
+- Instagram: @pams_uikit

@@ -1,11 +1,11 @@
 # Button Component – Pams Kit v1
 
-Komponen **Button** berbasis HTML & CSS.  
-Modular, copy–paste friendly, tanpa JavaScript.
+A **Button component** built with pure HTML & CSS.  
+Modular, copy–paste friendly, and JavaScript-free.
 
 ---
 
-## Cara Pakai
+## Usage
 
 ### 1. Import CSS
 
@@ -15,7 +15,7 @@ Modular, copy–paste friendly, tanpa JavaScript.
 <link rel="stylesheet" href="/components/button/button.css" />
 ```
 
-Jika menggunakan icon:
+If you are using icons:
 
 ```html
 <link
@@ -26,7 +26,7 @@ Jika menggunakan icon:
 
 ---
 
-## Contoh Dasar
+## Basic Example
 
 ```html
 <button class="pk-btn pk-btn--primary">
@@ -82,7 +82,7 @@ pk-btn--disabled
 
 ---
 
-## Dengan Icon
+## With Icon
 
 ```html
 <button class="pk-btn pk-btn--success">
@@ -101,9 +101,9 @@ pk-btn--disabled
 
 ---
 
-## Customisasi
+## Customization
 
-Semua warna & radius menggunakan CSS Variable:
+All colors and border radius values are controlled using CSS Variables:
 
 ```css
 :root {
@@ -116,6 +116,15 @@ Semua warna & radius menggunakan CSS Variable:
 
 ## Notes
 
-- Class bebas dikombinasikan selama logis
-- Icon menggunakan **Bootstrap Icons**
-- Tidak tergantung framework atau JavaScript
+- Classes can be freely combined as long as they make sense
+- Icons are provided by **Bootstrap Icons**
+- No framework and no JavaScript dependency
+
+---
+
+📬 Contact & Links
+If you have questions, feedback, or would like to collaborate, feel free to reach out through the following channels. I’m open to discussions related to UI kits, frontend styling, and component design.
+
+- WhatsApp: +62 838-3373-5915
+- GitHub: https://github.com/pamskit
+- Instagram: @pams_uikit
